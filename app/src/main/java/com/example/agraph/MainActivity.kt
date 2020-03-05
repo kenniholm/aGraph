@@ -14,9 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        // Find my plot
         xyPlot = findViewById(R.id.plot)
-
         //List of values to display on y axis
         var series1Numbers = listOf(1, 4, 2, 8, 4, 16, 8, 32, 16, 64)
         var series2Numbers = listOf(5, 2, 10, 5, 20, 10, 40, 20, 80, 40)
@@ -35,8 +34,6 @@ class MainActivity : AppCompatActivity() {
         xyPlot.addSeries(series2, series2Format)
         xyPlot.title.text = "Folk med Gedeskæg"
         xyPlot.domainTitle.text = "År det har groet"
-        xyPlot.rangeTitle.text = "Antal"
-
-
+        xyPlot.rangeTitle.text = "Længde på skæg"
     }
 }
