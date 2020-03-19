@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:fillViewport="true">
+
+    <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <com.androidplot.pie.PieChart
+        android:id="@+id/mySimplePieChart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        ap:title="Dele af befolkningen med brækket ben."/>
+
 
     <com.androidplot.xy.XYPlot
         style="@style/APDefacto.Dark"
         android:id="@+id/plot"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clickable="true"
         ap:title="A Simple XY Plot"
         ap:rangeTitle="range"
         ap:domainTitle="domain"
@@ -16,4 +32,5 @@
         ap:lineLabelRotationBottom="-45"/>
 
 
-</LinearLayout>
+        </LinearLayout>
+</ScrollView>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.androidplot.util.PixelUtils
 import com.androidplot.xy.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        
+
         // Find my plot
         xyPlot = findViewById(R.id.plot)
         //List of values to display on y axis
@@ -35,5 +39,6 @@ class MainActivity : AppCompatActivity() {
         xyPlot.title.text = "Folk med Gedeskæg"
         xyPlot.domainTitle.text = "År det har groet"
         xyPlot.rangeTitle.text = "Længde på skæg"
+
     }
 }
