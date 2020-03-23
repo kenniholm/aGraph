@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -16,21 +20,22 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        ap:title="Dele af befolkningen med brækket ben."/>
+        ap:title="Dele af befolkningen med et brækket ben."/>
 
 
-    <com.androidplot.xy.XYPlot
+    <!--<com.androidplot.xy.XYPlot
         style="@style/APDefacto.Dark"
         android:id="@+id/plot"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:clickable="true"
         ap:title="A Simple XY Plot"
         ap:rangeTitle="range"
         ap:domainTitle="domain"
         ap:lineLabels="left|bottom"
-        ap:lineLabelRotationBottom="-45"/>
+        ap:lineLabelRotationBottom="-45"/>-->
 
 
         </LinearLayout>
 </ScrollView>
+</RelativeLayout>
